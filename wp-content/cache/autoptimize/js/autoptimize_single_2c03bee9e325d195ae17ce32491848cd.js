@@ -1,0 +1,1 @@
+window.wc.blocksCheckout.registerCheckoutFilters('woorewards-pointsoncart-coupon',{coupons:function(coupons,extensions,args){return coupons.map((coupon)=>{if(lws_wr_pointsoncart.coupons[coupon.label]!=undefined){return{...coupon,label:lws_wr_pointsoncart.coupons[coupon.label],}}else{return coupon}})},})
